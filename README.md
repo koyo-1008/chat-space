@@ -39,7 +39,7 @@
 |text|text||
 |image|text||
 ### Association
-- belongs_to :use
+- belongs_to :user
 - belongs_to :group
 
 
