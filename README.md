@@ -28,7 +28,7 @@
 
 
 ### Association
-- has_many :groups_users
+
 - has_many :users, through: :groups_users
 
 ## messagesテーブル
@@ -39,8 +39,8 @@
 |text|text||
 |image|text||
 ### Association
-- belongs_to :user
-- belongs_to :groups
+- belongs_to :use
+- belongs_to :group
 
 
 
