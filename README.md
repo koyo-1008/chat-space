@@ -24,13 +24,25 @@
 |Column|Type|Options|
 |------|----|-------|
 |title|string|nill: false|
-|text|text|null: false|
+|messages_id|integer|null: false|
 |user_id|integer|null: false, foreign_key: true|
 
 
 ### Association
 - has_many :groups_users
 - has_many :users, through: :groups_users
+
+## messagesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
+|text|text|null: false|
+
+### Association
+- belong :user
+- belong :groups
+
 
 
 
