@@ -39,8 +39,8 @@
 |text|text||
 |image|text||
 ### Association
-- belong_to :user
-- belong_to :groups
+- belongs_to :user
+- belongs_to :groups
 
 
 
