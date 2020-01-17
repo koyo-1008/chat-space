@@ -1,0 +1,59 @@
+.side-bar{
+  width: 300px;
+  height: 100%;
+  .header{
+    background-color: #253141;  
+    height: 100px;
+    .username{
+      line-height: 100px;
+      margin-left: 20px;
+      margin-right: 20px;
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: bold;
+      .icon-pen{
+        position: absolute;
+         left: 235px;
+         top: 0px;
+         a {
+           .fas.fa-edit{
+            color: #ffffff;
+           }
+         }
+      }
+      .icon-ger{
+        position: absolute;
+        left: 260px;
+        top: 0px; 
+        a {
+          .fa.fa-cog{
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+    .main{
+      background-color: #2f3e51;
+      height: calc(100vh - 100px);
+      position: relative;
+      .group_name{
+        font-size: 15px;
+        font-weight: bold;
+        color: #ffffff;
+        height: 15px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+      }
+      .group_message{
+        font-weight: bold;
+        font-size: 11px;
+        color: #ffffff;
+        height: 11px;
+        position: absolute;
+        left: 20px;
+        top: 40px;
+      }
+    }
+}

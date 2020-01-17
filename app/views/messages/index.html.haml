@@ -1,0 +1,40 @@
+.wrapper
+  = render "side_bar"
+  .chat
+    .header
+      .group  
+        .group_list
+          test
+        .group_member
+          aaa
+      .Edit
+        .Edit_btn
+          = link_to "#" do
+            Edit
+    .main
+      .main-group
+        .main-group_name
+          masa
+        .main-group_message
+          2019/1/13日
+      .main-massage
+        おはよう！
+      .main-group
+        .main-group_name
+          aaa
+        .main-group_message
+          2019/1/13日
+      .main-massage
+        おはよう！
+    .footer
+      .footer_message
+        %input{type: "text",placeholder: "type a message"}
+        %label{class: "message_image"}
+          = icon('fas', 'image')
+          %input{type: "file"}
+          
+      .footer_send_btn
+        = link_to "#" do
+          Send
+
+
