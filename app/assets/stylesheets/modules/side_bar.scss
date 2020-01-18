@@ -8,8 +8,8 @@
       line-height: 100px;
       margin-left: 20px;
       margin-right: 20px;
-      color: #ffffff;
-      font-size: 16px;
+      color: $side_bar_maincolor;
+      font-size: $namefontsize;
       font-weight: bold;
       .icon-pen{
         position: absolute;
@@ -17,7 +17,7 @@
          top: 0px;
          a {
            .fas.fa-edit{
-            color: #ffffff;
+            color: $side_bar_maincolor;
            }
          }
       }
@@ -27,7 +27,7 @@
         top: 0px; 
         a {
           .fa.fa-cog{
-            color: #ffffff;
+            color: $side_bar_maincolor;
           }
         }
       }
@@ -40,7 +40,7 @@
       .group_name{
         font-size: 15px;
         font-weight: bold;
-        color: #ffffff;
+        color: $side_bar_maincolor;
         height: 15px;
         position: absolute;
         left: 20px;
@@ -49,7 +49,7 @@
       .group_message{
         font-weight: bold;
         font-size: 11px;
-        color: #ffffff;
+        color: $side_bar_maincolor;
         height: 11px;
         position: absolute;
         left: 20px;
