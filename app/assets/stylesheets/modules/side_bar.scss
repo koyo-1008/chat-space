@@ -15,8 +15,7 @@
         position: absolute;
          left: 235px;
          top: 0px;
-         a {
-           .fas.fa-edit{
+         .fas {
             color: $side_bar_maincolor;
            }
          }
@@ -34,24 +33,30 @@
     .main{
       background-color: #2f3e51;
       height: calc(100vh - 100px);
+      .group{
+        width: 100vw;
+        height: 80px;
       position: relative;
+      }
       .group_name{
-        font-size: 15px;
-        font-weight: bold;
-        color: $side_bar_maincolor;
         height: 15px;
         position: absolute;
         left: 20px;
         top: 20px;
+        font-size: 15px;
+      font-weight: bold;
+      }
+        a{
+        color: $side_bar_maincolor;
+        text-decoration: none;
       }
       .group_message{
-        font-weight: bold;
-        font-size: 11px;
-        color: $side_bar_maincolor;
         height: 11px;
         position: absolute;
         left: 20px;
         top: 40px;
+        font-weight: bold;
+      font-size: 11px;
       }
     }
-}
+
