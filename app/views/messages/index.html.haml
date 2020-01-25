@@ -4,40 +4,27 @@
     .header
       .group  
         .group_list
-          test
+          = @group.name
         .group_member
           .menber
             menber:
           .menber_name
-            雄介
+            - @group.users.each do |user|
+              =user.name
       .Edit
         .Edit_btn
-          = link_to "#" do
+          = link_to "edit" do
             Edit
     .main
-      .main-group
-        .main-group_name
-          masa
-        .main-group_message
-          2019/1/13日
-      .main-massage
-        おはよう！
-      .main-group
-        .main-group_name
-          aaa
-        .main-group_message
-          2019/1/13日
-      .main-massage
-        おはよう！
-    .footer
+      = render @messages
+    
+    = form_for [@group, @message],html: { class: "footer" } do |f|
       .footer_message
-        %input{type: "text",placeholder: "type a message"}
-        %label{class: "message_image"}
-          = icon('fas', 'image')
-          %input{type: "file"}
-          
-      .footer_send_btn
-        = link_to "#" do
-          Send
+        = f.text_field :content, class: 'type a message', placeholder: 'type a message'
+        = f.label :image, class: 'message_image' do
+          = icon('fas', 'image', class: 'icon')
+          = f.file_field :image
+        
+      = f.submit 'Send', class: 'footer_send_btn'
 
 
