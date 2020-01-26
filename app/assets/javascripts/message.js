@@ -84,12 +84,10 @@ $(function(){
           //メッセージが入ったHTMLに、入れ物ごと追加
           $('.main').append(insertHTML);
           $(".main").animate({ scrollTop: $('.main')[0].scrollHeight});
-          $("#new_message")[0].reset();
-          $(".form__submit").prop("disabled", false);
         }
       })
       .fail(function() {
-      
+        alert('自動更新に失敗しました。');
       });
     };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
